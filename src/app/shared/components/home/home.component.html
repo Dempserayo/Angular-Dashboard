@@ -1,0 +1,37 @@
+<div class="w-full h-screen flex flex-col justify-between ">
+    <app-navbar/>
+    <div class="w-full h-auto flex flex-col gap-2">
+        <!-- Titulo Principal -->
+        <a href="/Raye">
+            <h1 class="text-2xl sm:text-4xl lg:text-9xl font-black uppercase leading-tight tracking-tight drop-shadow-2xl drop-shadow-black hover:text-white transition-colors duration-500 hover:cursor-none ">Frontend Web Angular</h1>
+        </a>
+        
+        <!-- Tecnologias usadas -->
+        <div class="w-full hidden lg:flex flex-row text-white">
+            <div class="w-32 sm:w-60 border h-10  flex  px-4 items-center bg-black hover:bg-white hover:text-black hover:border-black transition-all duration-500 hover:cursor-pointer hover:shadow-2xl hover:shadow-red-500 hover:z-50">
+                <a href="https://angular.dev/">
+                    <p class="text-xs sm:text-sm font-black uppercase leading-tight tracking-tight">Angular {{ angularVersion }}</p>
+                </a>
+            </div>
+            <div class="w-32 sm:w-40 border h-10  flex  px-4 items-center bg-black hover:bg-white hover:text-black hover:border-black transition-all duration-500 hover:cursor-pointer hover:shadow-2xl hover:shadow-blue-500 hover:z-50">
+                <a href="https://www.typescriptlang.org/">
+                    <p class="text-xs sm:text-sm font-black uppercase leading-tight tracking-tight">Typescript  </p>
+                </a>
+            </div>
+            <div class="w-32 sm:w-40 border h-10  flex  px-4 items-center bg-black hover:bg-white hover:text-black hover:border-black transition-all duration-500 hover:cursor-pointer hover:shadow-2xl hover:shadow-cyan-500 hover:z-50">
+                <a href="https://tailwindcss.com/">
+                    <p class="text-xs sm:text-sm font-black uppercase leading-tight tracking-tight">TailwindCss</p>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Informacion / Updates  -->
+        <span class="text-xs font-bold uppercase leading-tight tracking-tight">
+            <p>Ultima Modificacion - 4/05/2025</p>
+            <a href="https://github.com/RayeRayeRaye">
+                <p>Modificado por - Raye</p>
+            </a>
+        </span>
+    </div>
+    <app-footer/>
+</div>
