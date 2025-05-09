@@ -1,7 +1,8 @@
 
-<div [ngClass]="isCollapsed ? 'w-14 h-full opacity-50 hover:opacity-100 hover:shadow-2xl hover:shadow-white  transition-all duration-300  border-4 border-white text-white  flex justify-center items-start' : 'w-64 h-full transition-all duration-500   text-white shadow-2xl shadow-white border-4 border-white flex flex-col'">
+<div [ngClass]="isCollapsed ? 'w-14 h-full opacity-50 hover:opacity-100 hover:shadow-2xl hover:shadow-white  transition-all duration-300  border border-white flex justify-center items-start'
+    : 'w-64 h-full transition-all duration-500  shadow-2xl shadow-white flex flex-col border border-white bg-gray-400'">
     <button class="text-start flex items-start" (click)="toggleSidebar()">
-        <p class="font-black text-lg cursor-pointer  w-10 h-10 flex justify-center items-center">{{isCollapsed ? 'X' : 'X'}}</p>
+        <p class="font-black text-white text-lg cursor-pointer  w-10 h-10 flex justify-center items-center">{{isCollapsed ? 'X' : 'X'}}</p>
     </button>
 
     <!-- Dashboard pages  -->
@@ -13,37 +14,37 @@
         <div class="w-full h-full  flex flex-col justify-between">
             <ul class="w-full h-full flex flex-col">
                 <a href="" class="text-xs font-black uppercase leading-tight tracking-tight">
-                    <li class="w-full h-auto hover:bg-blue-500 hover:shadow-2xl hover:shadow-blue-200 text-white transition-all duration-300 p-2 cursor-pointer border">
+                    <li class="w-full h-auto hover:bg-blue-500 hover:shadow-2xl hover:shadow-blue-500 text-white transition-all duration-300 p-2 cursor-pointer border">
                         General
                     </li>
                 </a>
                 <a href="" class="text-xs font-black uppercase leading-tight tracking-tight">
-                    <li class="w-full h-auto hover:bg-blue-500 hover:shadow-2xl hover:shadow-blue-200 text-white transition-all duration-300 p-2 cursor-pointer border-l border-r">
+                    <li class="w-full h-auto hover:bg-blue-500 hover:shadow-2xl hover:shadow-blue-500 text-white transition-all duration-300 p-2 cursor-pointer border-l border-r">
                         Tables
                     </li>
                 </a>
                 <a href="" class="text-xs font-black uppercase leading-tight tracking-tight">
-                    <li class="w-full h-auto hover:bg-blue-500 hover:shadow-2xl hover:shadow-blue-200 text-white transition-all duration-300 p-2 cursor-pointer border">
+                    <li class="w-full h-auto hover:bg-blue-500 hover:shadow-2xl hover:shadow-blue-500 text-white transition-all duration-300 p-2 cursor-pointer border">
                         Projects
                     </li>
                 </a>
                 <a href="" class="text-xs font-black uppercase leading-tight tracking-tight">
-                    <li class="w-full h-auto hover:bg-blue-500 hover:shadow-2xl hover:shadow-blue-200 text-white transition-all duration-300 p-2 cursor-pointer border-l  border-r">
+                    <li class="w-full h-auto hover:bg-blue-500 hover:shadow-2xl hover:shadow-blue-500 text-white transition-all duration-300 p-2 cursor-pointer border-l  border-r">
                         graphic
                     </li>
                 </a>
                 <a href="" class="text-xs font-black uppercase leading-tight tracking-tight">
-                    <li class="w-full h-auto hover:bg-blue-500 hover:shadow-2xl hover:shadow-blue-200 text-white transition-all duration-300 p-2 cursor-pointer border">
+                    <li class="w-full h-auto hover:bg-blue-500 hover:shadow-2xl hover:shadow-blue-500 text-white transition-all duration-300 p-2 cursor-pointer border">
                         Dashboard
                     </li>
                 </a>
                 <a href="" class="text-xs font-black uppercase leading-tight tracking-tight">
-                    <li class="w-full h-auto hover:bg-blue-500 hover:shadow-2xl hover:shadow-blue-200 text-white transition-all duration-300 p-2 cursor-pointer border-l border-r">
+                    <li class="w-full h-auto hover:bg-blue-500 hover:shadow-2xl hover:shadow-blue-500 text-white transition-all duration-300 p-2 cursor-pointer border-l border-r">
                         Notifications
                     </li>
                 </a>
                 <a href="" class="text-xs font-black uppercase leading-tight tracking-tight">
-                    <li class="w-full h-auto hover:bg-blue-500 hover:shadow-2xl hover:shadow-blue-200 text-white transition-all duration-300 p-2 cursor-pointer border">
+                    <li class="w-full h-auto hover:bg-blue-500 hover:shadow-2xl hover:shadow-blue-500 text-white transition-all duration-300 p-2 cursor-pointer border">
                         Configurations
                     </li>
                 </a>
@@ -61,12 +62,12 @@
         <div class="w-full h-full flex flex-col justify-between">
             <ul class="w-full flex flex-col justify-center items-center">
                 <a href="" class="text-xs font-black uppercase leading-tight tracking-tight w-full h-full">
-                    <li class="w-full h-auto hover:bg-blue-500 border border-white hover:shadow-2xl hover:shadow-blue-200 text-white transition-all duration-500 p-2">
+                    <li class="w-full h-auto hover:bg-blue-500 border border-white hover:shadow-2xl hover:shadow-blue-500 text-white transition-all duration-500 p-2">
                         New Project
                     </li>
                 </a>
                 <a href="" class="text-xs font-black uppercase leading-tight tracking-tight w-full h-full">
-                    <li class="w-full h-auto hover:bg-blue-500 border-b border-l border-r border-white hover:shadow-2xl hover:shadow-blue-200 text-white transition-all duration-500 p-2">
+                    <li class="w-full h-auto hover:bg-blue-500 border-b border-l border-r border-white hover:shadow-2xl hover:shadow-blue-500 text-white transition-all duration-500 p-2">
                         Load Project
                     </li>
                 </a>
@@ -83,12 +84,12 @@
         <div class="w-full h-full flex flex-col justify-between">
             <ul class="w-full flex flex-col justify-center items-center">
                 <a href="" class="text-xs font-black uppercase leading-tight tracking-tight w-full h-full">
-                    <li class="w-full h-auto hover:bg-blue-500 border border-white hover:shadow-2xl hover:shadow-blue-200 text-white transition-all duration-500 p-2">
+                    <li class="w-full h-auto hover:bg-blue-500 border border-white hover:shadow-2xl hover:shadow-blue-500 text-white transition-all duration-500 p-2">
                         Sign In
                     </li>
                 </a>
                 <a href="" class="text-xs font-black uppercase leading-tight tracking-tight w-full h-full">
-                    <li class="w-full h-auto hover:bg-blue-500 border-b border-l border-r border-white hover:shadow-2xl hover:shadow-blue-200 text-white transition-all duration-500 p-2">
+                    <li class="w-full h-auto hover:bg-blue-500 border-b border-l border-r border-white hover:shadow-2xl hover:shadow-blue-500 text-white transition-all duration-500 p-2">
                         Sign Up
                     </li>
                 </a>
