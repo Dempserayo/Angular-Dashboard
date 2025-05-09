@@ -1,6 +1,11 @@
-<div class="w-60 h-full  bg-gradient-to-b from-gray-400  to-gray-950  flex flex-col gap-10  p-4 border-4 border-white">
+
+<div [ngClass]="isCollapsed ? 'w-14 h-full opacity-50 hover:opacity-100 hover:shadow-2xl hover:shadow-white  transition-all duration-300  border-4 border-white text-white  flex justify-center items-start' : 'w-64 h-full transition-all duration-500   text-white shadow-2xl shadow-white border-4 border-white flex flex-col'">
+    <button class="text-start flex items-start" (click)="toggleSidebar()">
+        <p class="font-black text-lg cursor-pointer  w-10 h-10 flex justify-center items-center">{{isCollapsed ? 'X' : 'X'}}</p>
+    </button>
+
     <!-- Dashboard pages  -->
-    <div class="w-full h-full">
+    <div [ngClass]="isCollapsed ? 'hidden transition-all duration-500' : 'block transition-all duration-500 w-full p-4'">
         <div class="w-full flex flex-col">
             <h1 class="text-white text-sm leading-tight tracking-tight uppercase font-black">Home Pages</h1>
             <span class="w-full h-4 bg-white"></span>
@@ -48,7 +53,7 @@
     </div>
 
     <!-- Project pages  -->
-    <div class="w-full ">
+    <div [ngClass]="isCollapsed ? 'hidden transition-all duration-500' : 'block transition-all duration-500 w-full p-4'">
         <div class="w-full flex flex-col">
             <h2 class="text-white text-sm leading-tight tracking-tight uppercase font-black">Project Pages</h2>
             <span class="w-full h-4 bg-white "></span>
@@ -70,7 +75,7 @@
     </div>
     
     <!-- Auth pages  -->
-    <div class="w-full ">
+    <div [ngClass]="isCollapsed ? 'hidden transition-all duration-500' : 'block transition-all duration-500 w-full p-4'">
         <div class="w-full flex flex-col">
             <h2 class="text-white text-sm leading-tight tracking-tight uppercase font-black">Auth Pages</h2>
             <span class="w-full h-4 bg-white "></span>
