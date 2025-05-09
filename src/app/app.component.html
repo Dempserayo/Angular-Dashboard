@@ -1,1 +1,13 @@
-    <router-outlet />
+<div class="w-full h-screen flex flex-row p-4  bg-gray-400 ">
+    <div class="shadow-2xl shadow-white hidden lg:block">
+        <app-sidebar/>    
+    </div>
+    <div class="w-full lg:w-[85vw] shadow-2xl shadow-white bg-white p-4">
+        <router-outlet />    
+    </div>
+</div>
+
+<!-- Footer  -->
+<div class="w-full  p-8">
+    <app-footer/>
+</div>
