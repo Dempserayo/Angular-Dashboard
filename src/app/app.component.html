@@ -1,13 +1,17 @@
-<div class="w-full h-screen flex flex-row p-4  bg-gray-400 ">
-    <div class="shadow-2xl shadow-white hidden lg:block">
-        <app-sidebar/>    
+<div class="w-full h-screen flex flex-col  p-4 gap-2  bg-gray-400 ">
+    <div class="w-full h-full flex flex-row">
+
+        <!-- Sidebar - Oculto en Mobile y Visible en LG en adelante  -->
+       <div class="shadow-2xl shadow-white hidden lg:block">
+           <app-sidebar/>    
+        </div>
+
+        <!-- Informacion Principal y Cambiante  -->
+        <div class="w-full lg:w-full shadow-2xl shadow-white bg-white p-4">
+            <router-outlet />    
+        </div>
     </div>
-    <div class="w-full lg:w-[85vw] shadow-2xl shadow-white bg-white p-4">
-        <router-outlet />    
-    </div>
+    <!-- <app-footer/> -->
 </div>
 
-<!-- Footer  -->
-<div class="w-full  p-8">
-    <app-footer/>
-</div>
+
