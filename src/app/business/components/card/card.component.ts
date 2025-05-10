@@ -8,7 +8,13 @@ import { Component } from '@angular/core';
   styleUrl: './card.component.css'
 })
 export class CardComponent {
-    totalCash: number = 40;
+    totalCash: number = 44000;
     stateNumber: number = 20;
     statePercentage: boolean = true;
+
+    isCollapsed = false;
+
+    toggleSidebar() {
+    this.isCollapsed = !this.isCollapsed;
+  }
 }
