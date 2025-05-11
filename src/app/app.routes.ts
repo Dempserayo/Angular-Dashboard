@@ -13,34 +13,32 @@ export const routes: Routes = [
         component: HomeComponent
     },
     {
+        path: 'Raye',
+        loadComponent:() => import('./shared/components/raye/raye.component').then(c => c.RayeComponent)
+    },
+    {
         path: 'tables',
-        component: TablesViewPageComponent
+        loadComponent:() => import('./shared/pages/tables/tables-view-page/tables-view-page.component').then(c => c.TablesViewPageComponent)
     },
     {
         path: 'projects',
-        component: ProjectsViewPageComponent
+        loadComponent:() => import('./shared/pages/projects/projects-view-page/projects-view-page.component').then(c => c.ProjectsViewPageComponent)
     },
     {
         path: 'graphics',
-        component: GraphicsViewPageComponent
-    }, 
+        loadComponent:() => import('./shared/pages/graphics/graphics-view-page/graphics-view-page.component').then(c => c.GraphicsViewPageComponent)
+    },
     {
         path: 'dashboard',
-        component: DashboardViewPageComponent
+        loadComponent:() => import('./shared/pages/dashboard/dashboard-view-page/dashboard-view-page.component').then(c => c.DashboardViewPageComponent)
     },
     {
         path: 'notifications',
-        component: NotificationsViewPageComponent
+        loadComponent:() => import('./shared/pages/notifications/notifications-view-page/notifications-view-page.component').then(c => c.NotificationsViewPageComponent)
     },
     {
         path: 'configurations',
-        component: ConfigurationsViewPageComponent
+        loadComponent:() => import('./shared/pages/configurations/configurations-view-page/configurations-view-page.component').then(c => c.ConfigurationsViewPageComponent)
     },
-
-    // Ejemplo de como usar Lazy Loading 
-    {
-        path: 'Raye',
-        loadComponent:() => import('./shared/components/raye/raye.component').then(c => c.RayeComponent)
-    }
 ];
  
