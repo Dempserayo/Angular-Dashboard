@@ -3,7 +3,11 @@
     : 'w-64 h-full transition-all duration-500  shadow-2xl shadow-white flex flex-col border border-white bg-gray-500'">
    
    <button class="text-start flex items-start" (click)="toggleSidebar()">
-        <p class="font-black text-white text-lg cursor-pointer  w-10 h-10 flex justify-center items-center">{{isCollapsed ? 'X' : 'X'}}</p>
+        <p class="font-black text-white text-lg cursor-pointer  w-10 h-10 flex justify-center items-center">
+            <mat-icon class="text-white text-2xl">
+                {{ isCollapsed ? 'menu' : 'close' }}
+            </mat-icon>
+        </p>
     </button>
 
     <!-- Dashboard pages -->
