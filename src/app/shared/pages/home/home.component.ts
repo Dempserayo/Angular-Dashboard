@@ -1,9 +1,10 @@
 import { Component, VERSION } from '@angular/core';
-import { NavbarComponent } from '../navbar/navbar.component';
-import { SidebarComponent } from '../sidebar/sidebar.component';
-import { FooterComponent } from "../footer/footer.component";
-import { CardComponent } from '../../../business/components/card/card.component';
+
 import { TablesComponent } from "../../../business/components/tables/tables.component";
+import { CardComponent } from '../../../business/components/card/card.component';
+import { FooterComponent } from '../../components/footer/footer.component';
+import { SidebarComponent } from '../../components/sidebar/sidebar.component';
+import { NavbarComponent } from '../../components/navbar/navbar.component';
 
 @Component({
   selector: 'app-home',
