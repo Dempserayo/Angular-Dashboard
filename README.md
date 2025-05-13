@@ -1,4 +1,7 @@
-# AngularProject
+# Dashboard
+![image](https://github.com/user-attachments/assets/a5de1293-c39d-47bd-a12e-179fbb3c148a)
+![image](https://github.com/user-attachments/assets/4aad713e-cd69-42c9-ad59-5fc8bf129220)
+
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.10.
 
