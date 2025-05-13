@@ -1,15 +1,11 @@
-<div class="w-full h-auto flex flex-row p-4 bg-gradient-to-b from-gray-400 to-gray-950 relative gap-2">
-  
-
-  <div class="hidden lg:block h-auto py-10 z-10">
-    <app-sidebar/>
+<div class="w-full h-auto flex flex-row p-4 bg-gradient-to-b from-gray-400 to-gray-950 gap-2 relative">
+  <div class="hidden lg:block h-screen  py-10 z-10">
+    <app-sidebar></app-sidebar>
   </div>    
 
   <!-- Contenido principal -->
-  <div class="w-full h-auto hover:shadow-2xl hover:shadow-white bg-white flex flex-col transition-all duration-500 z-10">
-    <router-outlet />
+  <div class="w-full h-auto hover:shadow-white hover:shadow-2xl transition-all duration-500 flex flex-col bg-white z-10">
+    <router-outlet></router-outlet>
     <!-- <app-footer/> -->
   </div>
-
-  
 </div>
