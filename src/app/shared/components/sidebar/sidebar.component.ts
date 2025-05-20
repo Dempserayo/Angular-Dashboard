@@ -12,7 +12,7 @@ import { MatIconModule } from '@angular/material/icon';
 })
 export class SidebarComponent {
   isCollapsed = true;
-
+    
   toggleSidebar() {
     this.isCollapsed = !this.isCollapsed;
   }

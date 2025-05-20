@@ -8,7 +8,7 @@ import { MaintextComponent } from "../../components/maintext/maintext.component"
 
 @Component({
   selector: 'app-home',
-  imports: [NavbarComponent, SidebarComponent, FooterComponent, CardComponent, MaintextComponent, MaintextComponent],
+  imports: [NavbarComponent, FooterComponent, CardComponent, MaintextComponent, MaintextComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
