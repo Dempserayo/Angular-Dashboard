@@ -94,9 +94,7 @@
               "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.css"
             ],
-            "scripts": [
-              "test:ci": "ng test --watch=false --browsers=ChromeHeadless"
-            ]
+            "scripts": []
           }
         }
       }
