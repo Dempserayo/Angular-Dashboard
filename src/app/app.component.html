@@ -5,6 +5,9 @@
 
   <!-- Contenido principal -->
   <div class="w-full h-auto hover:shadow-white hover:shadow-2xl transition-all duration-500 flex flex-col bg-white z-10">
-      <router-outlet></router-outlet>
+    <div [@routeAnimations]="prepareRoute(outlet)">
+      <router-outlet #outlet="outlet"></router-outlet>
+    </div>
+
   </div>
 </div>
