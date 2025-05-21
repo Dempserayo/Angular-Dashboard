@@ -8,12 +8,10 @@ import { SidebarComponent } from "./shared/components/sidebar/sidebar.component"
   imports: [RouterOutlet, SidebarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
+
 })
 export class AppComponent {
   title = 'angular-project';
 
-  prepareRoute(outlet: RouterOutlet) {
-    return outlet && outlet.activatedRouteData;
-  }
 }
 
