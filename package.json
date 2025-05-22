@@ -7,7 +7,6 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "test:ci": "ng test --watch=false --browsers=Chrome",
     "serve:ssr:angular-project": "node dist/angular-project/server/server.mjs"
   },
   "private": true,
