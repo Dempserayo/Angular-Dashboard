@@ -2,18 +2,22 @@
 <div [ngClass]="isCollapsed ? 'w-20 h-auto opacity-20  hover:opacity-100 hover:shadow-2xl hover:shadow-white  transition-all duration-500 border border-white flex flex-col items-center'
     : 'w-64 h-auto  transition-all duration-500  shadow-2xl shadow-white flex flex-col border border-white bg-gray-500'">
    
+   <button class="text-start flex items-start" (click)="toggleSidebar()">
+        <p class="font-black text-white text-lg cursor-pointer  w-10 h-10 flex justify-center items-center">
+            <mat-icon class="text-white text-2xl">
+                {{ isCollapsed ? 'menu' : 'close' }}
+            </mat-icon>
+        </p>
+    </button>
 
     <!-- Dashboard pages -->
     <div [ngClass]="isCollapsed ? 'hidden transition-all duration-500' : 'block transition-all duration-500 w-full p-4'">
+        <div class="w-full flex flex-col">
+            <h1 class="text-white text-sm leading-tight tracking-tight uppercase font-black">Home Pages</h1>
+            <span class="w-full h-4 bg-white"></span>
+        </div>
         <div class="w-full h-full  flex flex-col justify-between">
             <ul class="w-full h-full flex flex-col">
-               <a>
-                    <li class="w-full h-auto flex flex-row items-center   hover:bg-red-500 hover:shadow-2xl hover:shadow-red-500 text-white transition-all duration-300 p-2 cursor-pointer border-l border-r border-t" (click)="toggleSidebar()">
-                        <mat-icon class=" text-2xl">
-                            {{ isCollapsed ? 'menu' : 'close' }}
-                        </mat-icon>
-                    </li>
-               </a>
                 <a href="" class="text-xs  leading-tight tracking-tight">
                     <li class="w-full h-auto flex flex-row items-center   hover:bg-blue-500 hover:shadow-2xl hover:shadow-blue-500 text-white transition-all duration-300 p-2 cursor-pointer border">
                         <mat-icon style="font-size: 20px;">home</mat-icon>
@@ -64,55 +68,41 @@
     <!-- Dashboard pages - Sidebar Cerrador -->
     <div [ngClass]="isCollapsed ? 'block w-full p-4   transition-all duration-500 ' : 'hidden transition-all duration-500 w-full p-4'">
         <ul class="w-full h-full flex flex-col ">
-            <a>
-                <li class="w-full h-auto flex flex-row items-center   hover:bg-blue-500 hover:shadow-2xl hover:shadow-blue-500 text-white transition-all duration-300 p-2 cursor-pointer border-l border-r border-t" (click)="toggleSidebar()">
-                    <mat-icon class="text-white text-2xl">
-                        {{ isCollapsed ? 'menu' : 'close' }}
-                    </mat-icon>
-                </li>
-            </a>
-            
-            <a href="" class="text-xs font-black uppercase leading-tight tracking-tight">
+                <a href="" class="text-xs font-black uppercase leading-tight tracking-tight">
                     <li class="w-full h-auto flex flex-row items-center justify-center  hover:bg-blue-500 hover:shadow-2xl hover:shadow-blue-500 text-white transition-all duration-300 p-2 cursor-pointer border-white border">
                         <mat-icon style="font-size: 20px;">home</mat-icon>
                     </li>
-            </a>
-            
-            <a href="tables" class="text-xs font-black uppercase leading-tight tracking-tight">
+                </a>
+                <a href="tables" class="text-xs font-black uppercase leading-tight tracking-tight">
                  <li class="w-full h-auto flex flex-row items-center justify-center  hover:bg-blue-500 hover:shadow-2xl hover:shadow-blue-500 text-white transition-all duration-300 p-2 cursor-pointer border-white border-l border-r">
                         <mat-icon style="font-size: 20px;">table</mat-icon>
                     </li>
-            </a>
-            
-            <a href="projects" class="text-xs font-black uppercase leading-tight tracking-tight">
+                </a>
+                <a href="projects" class="text-xs font-black uppercase leading-tight tracking-tight">
                   <li class="w-full h-auto flex flex-row items-center justify-center   hover:bg-blue-500 hover:shadow-2xl hover:shadow-blue-500 text-white transition-all duration-300 p-2 cursor-pointer border-white border">
                         <mat-icon style="font-size: 20px;">folder</mat-icon>
                     </li>
-            </a>
-            
-            <a href="graphics" class="text-xs font-black uppercase leading-tight tracking-tight">
+                </a>
+                <a href="graphics" class="text-xs font-black uppercase leading-tight tracking-tight">
                       <li class="w-full h-auto flex flex-row items-center justify-center   hover:bg-blue-500 hover:shadow-2xl hover:shadow-blue-500 text-white transition-all duration-300 p-2 cursor-pointer border-white border-l border-r">
                         <mat-icon style="font-size: 20px;">monitoring</mat-icon>
                     </li>
-            </a>
-            
-            <a href="dashboard" class="text-xs font-black uppercase leading-tight tracking-tight">
+                </a>
+                <a href="dashboard" class="text-xs font-black uppercase leading-tight tracking-tight">
                       <li class="w-full h-auto flex flex-row items-center justify-center   hover:bg-blue-500 hover:shadow-2xl hover:shadow-blue-500 text-white transition-all duration-300 p-2 cursor-pointer border-white border">
                         <mat-icon style="font-size: 20px;">dashboard</mat-icon>
                     </li>
-            </a>
-            
-            <a href="notifications" class="text-xs font-black uppercase leading-tight tracking-tight">
+                </a>
+                <a href="notifications" class="text-xs font-black uppercase leading-tight tracking-tight">
                       <li class="w-full h-auto flex flex-row items-center justify-center  hover:bg-blue-500 hover:shadow-2xl hover:shadow-blue-500 text-white transition-all duration-300 p-2 cursor-pointer border-white border-l border-r">
                         <mat-icon style="font-size: 20px;">notifications</mat-icon>
                     </li>
-            </a>
-            
-            <a href="configurations" class="text-xs font-black uppercase leading-tight tracking-tight">
+                </a>
+                <a href="configurations" class="text-xs font-black uppercase leading-tight tracking-tight">
                       <li class="w-full h-auto flex flex-row items-center justify-center  hover:bg-blue-500 hover:shadow-2xl hover:shadow-blue-500 text-white transition-all duration-300 p-2 cursor-pointer border-white border">
                         <mat-icon style="font-size: 20px;">settings</mat-icon>
                     </li>
-            </a>
+                </a>
            
         </ul>
     </div>
@@ -120,6 +110,10 @@
 
     <!-- Project pages  -->
     <div [ngClass]="isCollapsed ? 'hidden transition-all duration-500' : 'block transition-all duration-500 w-full p-4'">
+        <div class="w-full flex flex-col">
+            <h2 class="text-white text-sm leading-tight tracking-tight uppercase font-black">Project Pages</h2>
+            <span class="w-full h-4 bg-white "></span>
+        </div>
         <div class="w-full h-full flex flex-col justify-between">
             <ul class="w-full flex flex-col justify-center items-center">
                 <a href="" class="text-xs  leading-tight tracking-tight w-full h-full">
@@ -156,6 +150,10 @@
 
     <!-- Auth pages  -->
     <div [ngClass]="isCollapsed ? 'hidden transition-all duration-500' : 'block transition-all duration-500 w-full p-4'">
+        <div class="w-full flex flex-col">
+            <h2 class="text-white text-sm leading-tight tracking-tight uppercase font-black">Auth Pages</h2>
+            <span class="w-full h-4 bg-white "></span>
+        </div>
         <div class="w-full h-full flex flex-col justify-between">
             <ul class="w-full flex flex-col justify-center items-center">
                 <a href="" class="text-xs  leading-tight tracking-tight w-full h-full">
@@ -175,7 +173,7 @@
     </div>
 
         <!-- Auth pages - Sidebar Cerrador -->
-    <div [ngClass]="isCollapsed ? 'flex w-full p-4 transition-all duration-500 ' : 'hidden transition-all duration-500 w-full p-4'">
+    <div [ngClass]="isCollapsed ? 'block w-full p-4 transition-all duration-500 ' : 'hidden transition-all duration-500 w-full p-4'">
          <ul class="w-full flex flex-col justify-center items-center">
                 <a href="" class="text-xs font-black uppercase leading-tight tracking-tight w-full h-full">
                     <li class="w-full h-auto flex flex-row items-center justify-center  hover:bg-blue-500 hover:shadow-2xl hover:shadow-blue-500 text-white transition-all duration-300 p-2 cursor-pointer border-white border">                        
