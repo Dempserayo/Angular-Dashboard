@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
   
 jobs:
   test-and-revert:
@@ -25,13 +22,13 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install dependencies
-        run: |
-          npm install
-          npm install puppeteer
+      - name: Install Chrome
+        uses: browser-actions/setup-chrome@latest
+        with:
+          chrome-version: stable
 
-      - name: Setup Chrome for testing
-        run: echo "CHROME_BIN=$(npx puppeteer print-chromium-path)" >> $GITHUB_ENV
+      - name: Install dependencies
+        run: npm install
 
       - name: Run tests
         id: tests

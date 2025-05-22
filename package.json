@@ -6,8 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test ",
-    "test:ci": "ng test --watch=false --browsers=ChromeHeadless",
+    "test": "ng test",
+    "test:ci": "ng test --watch=false --browsers=Chrome",
     "serve:ssr:angular-project": "node dist/angular-project/server/server.mjs"
   },
   "private": true,
@@ -27,7 +27,6 @@
     "@tailwindcss/postcss": "^4.1.5",
     "express": "^4.18.2",
     "postcss": "^8.5.3",
-    "puppeteer": "^24.9.0",
     "rxjs": "~7.8.0",
     "tailwindcss": "^4.1.5",
     "tslib": "^2.3.0",
@@ -46,6 +45,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "puppeteer": "^24.9.0",
     "typescript": "~5.7.2"
   }
 }
