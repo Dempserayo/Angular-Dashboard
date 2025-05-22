@@ -1,6 +1,6 @@
 # Dashboard
-![image](https://github.com/user-attachments/assets/a5de1293-c39d-47bd-a12e-179fbb3c148a)
-![image](https://github.com/user-attachments/assets/4aad713e-cd69-42c9-ad59-5fc8bf129220)
+![image](https://github.com/user-attachments/assets/6c084105-6411-4b8f-80e3-f9e3bfb96a7b)
+
 
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.10.
