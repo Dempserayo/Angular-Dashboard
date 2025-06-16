@@ -1,6 +1,6 @@
 # 📊 DASHBOARD ADMINISTRATIVO
 
-![Dashboard Screenshot](https://github.com/user-attachments/assets/6c084105-6411-4b8f-80e3-f9e3bfb96a7b)
+![image](https://github.com/user-attachments/assets/02a17487-5183-45dc-b08f-a459f4f82d76)
 
  
 Instalación rápida
